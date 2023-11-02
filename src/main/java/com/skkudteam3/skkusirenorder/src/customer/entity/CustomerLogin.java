@@ -14,7 +14,6 @@ public class CustomerLogin {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "customer_login_id")
     private Long id;
-
     private String email;
 
     @OneToOne(mappedBy = "customerLogin")

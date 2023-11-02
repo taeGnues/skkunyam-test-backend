@@ -16,7 +16,7 @@ public class CustomerImage {
     private Long id;
     private String customerImagePath;
 
-    @OneToOne(mappedBy = "CustomerImage")
+    @OneToOne(mappedBy = "customerImage")
     private Customer customer;
 
     public void changeImage(String path){

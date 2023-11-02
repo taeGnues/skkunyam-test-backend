@@ -17,7 +17,7 @@ spring:
       platform: mysql
   datasource:
     url: jdbc:mysql://localhost:3306/skkunyam?characterEncoding=UTF-8
-    username: root
+    username: skkud
     password: a01084204241
     driver-class-name: com.mysql.cj.jdbc.Driver # mysql 8버전
     # driver-class-name: com.mysql.jdbc.Driver # mysql 5버전

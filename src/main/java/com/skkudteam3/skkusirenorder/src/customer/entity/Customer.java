@@ -39,6 +39,8 @@ public class Customer {
     @OneToMany(mappedBy = "customer")
     private List<Bookmark> bookmarks = new ArrayList<>();
 
+    //protected Customer(){}
+
     private Customer(String customerName, String email, int phoneNumber,SocialType socialType, int point){
         this.customerName = customerName;
         this.email = email;
@@ -47,10 +49,12 @@ public class Customer {
         this.point = point;
     }
 
+    //정적 팩토리 메소드 -> 무분별한 class 생성 방지
     public static Customer createCustomer(String customerName, String email, int phoneNumber,SocialType socialType, int point){
         return new Customer(customerName, email, phoneNumber, socialType, point);
     }
 
+    // point 수정 시 사용
     public void changePoint (int point){
         this.point = point;
     }
